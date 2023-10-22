@@ -56,3 +56,45 @@ for d in l:
         continue # loop will continue to next by skipping next statement
     print("shipping")
 ```
+
+### prime number using for loop(Not the best algo but to clear for loop)
+```python
+for num in range(2,10):
+    for n in range(2, num):
+        if num % n == 0:
+            print(f"{num} is divisible by {n}")
+            break
+    else:
+        print(f"{num} is prime number")
+```
+
+### List slicing
+
+### List comprehension
+
+### conditional compehension
+
+### sets and dictionaries comprehension
+
+### zip function
+```python
+a = ["Raj", "Ganesh", "Esanya", "Manu", "Arun"]
+b = ["CSM", "CSM", "CSM", "Raksha", "Raksha"]
+print(list(zip(a,b))) # if length of b is greater than a then extra value will be ignored.
+```
+
+### enumerate function
+```python
+a = ["Raj", "ranjan", "amit", "alice"]
+for counter,name in enumerate(a):
+    print(counter,name)
+
+print(list(enumerate(a, start=1))) # print(list(zip([0,1,2,3], a)))
+print(dict(enumerate(a)))
+```
+
+### Function
+```python
+def myfunction():
+    pass
+```
