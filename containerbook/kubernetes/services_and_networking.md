@@ -63,3 +63,29 @@ spec:
     - protocol: TCP
       port: 8080
 ```
+
+### Ingress
+```bash
+kubectl get ingress -A # To get ingress resource
+```
+```yaml
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: 
+  namespace: 
+  annotations:
+    nginx.ingress.kubernetes.io/rewrite-target: /
+    nginx.ingress.kubernetes.io/ssl-redirect: "false"
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /pay
+        pathType: Prefix
+        backend:
+          service:
+           name: pay-service
+           port:
+            number: 8282
+```
