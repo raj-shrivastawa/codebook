@@ -89,3 +89,4 @@ spec:
            port:
             number: 8282
 ```
+* ingress resource is napespace scoped. so ingress resource must be created in same namespace where service exists.
