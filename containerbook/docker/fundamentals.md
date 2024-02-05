@@ -12,3 +12,9 @@ docker run -d --name nginx --network devcsm nginx
 docker run -ti --network devcsm busybox sh
 ping 172.18.0.2 # nginx ip
 ``` 
+### docker volume(persistent)
+```bash
+docker run -ti --name busybox -v /tmp/dvol:/opt busybox
+```
+* Here `/tmp/dvol` is host dir and `/opt` is path inside container.
+* If pod will be killed/removed data will be avaialble on host path.
