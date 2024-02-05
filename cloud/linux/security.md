@@ -1,4 +1,4 @@
-### Some basic commands
+### Some basic commands User and Groups
 * To check the current user belongs to which group. `groups` 
 * chroot
 * Get entry from database file like passwd. `getent passwd raj` 
